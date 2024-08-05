@@ -1,0 +1,24 @@
+.goog-te-banner-frame {
+    visibility: visible !important;
+  }
+  
+  .goog-te-gadget {
+    font-size: 100% !important;
+  }
+  
+  .goog-te-menu2 {
+    font-size: 100% !important;
+  }
+  
+  .goog-te-menu2 a {
+    padding: 2px 5px !important;
+  }
+  
+  .goog-te-menu2 a:hover {
+    background-color: #ddd !important;
+  }
+  
+  .goog-te-menu2 a.goog-te-selected {
+    background-color: #448bcb !important;
+    color: #fff !important;
+  }

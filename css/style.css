@@ -1,0 +1,440 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+:root{
+   --blue:#3498db;
+   --dark-blue:#2980b9;
+   --red:#e74c3c;
+   --dark-red:#c0392b;
+   --black:#333;
+   --white:#fff;
+   --light-bg:#eee;
+   --light-bf: #c1d0f0;
+   --pink: #ffb3b3;
+   --box-shadow:0 5px 10px rgba(0,0,0,.1);
+}
+
+*{
+   font-family: 'Poppins', sans-serif;
+   margin:0; padding:0;
+   box-sizing: border-box;
+   outline: none; border: none;
+   text-decoration: none;
+}
+
+*::-webkit-scrollbar{
+   width: 10px;
+}
+
+*::-webkit-scrollbar-track{
+   background-color: transparent;
+}
+
+*::-webkit-scrollbar-thumb{
+   background-color: var(--blue);
+}
+
+.btn,
+.delete-btn{
+   width: 100%;
+   border-radius: 5px;
+   padding:10px 30px;
+   color:var(--white);
+   display: block;
+   text-align: center;
+   cursor: pointer;
+   font-size: 20px;
+   margin-top: 10px;
+}
+
+.btn{
+   background-color: var(--blue);
+}
+
+.btn:hover{
+   background-color: var(--dark-blue);
+}
+
+.delete-btn{
+   background-color: var(--red);
+}
+
+.delete-btn:hover{
+   background-color: var(--dark-red);
+}
+
+.message{
+   margin:10px 0;
+   width: 100%;
+   border-radius: 5px;
+   padding:10px;
+   text-align: center;
+   background-color: var(--red);
+   color:var(--white);
+   font-size: 20px;
+}
+
+.form-container{
+   /* min-height: 100vh; */
+   /* background-image: url(../educa.jpg); */
+   /* background-color: var(--pink); */
+   /* #ffb3b3 */
+   /* var(--light-bg); */
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding:20px;
+   flex-flow: column nowrap;
+}
+
+.form-container form{
+   padding:20px;
+   background-color: var(--white);
+   box-shadow: var(--box-shadow);
+   text-align: center;
+   width: 500px;
+   border-radius: 5px;
+}
+
+.form-container form h3{
+   margin-bottom: 10px;
+   font-size: 30px;
+   color:var(--black);
+   text-transform: uppercase;
+}
+
+.form-container form .box{
+   width: 100%;
+   border-radius: 5px;
+   padding:12px 14px;
+   font-size: 18px;
+   color:var(--black);
+   margin:10px 0;
+   background-color: var(--light-bg);
+}
+
+.form-container form p{
+   margin-top: 15px;
+   font-size: 20px;
+   color:var(--black);
+}
+
+.form-container form p a{
+   color:var(--red);
+}
+
+.form-container form p a:hover{
+   text-decoration: underline;
+}
+
+.container{
+   min-height: 100vh;
+   background-color: var(--light-bg);
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding:20px;
+}
+
+.container .profile{
+   padding:20px;
+   background-color: var(--white);
+   box-shadow: var(--box-shadow);
+   text-align: center;
+   width: 400px;
+   border-radius: 5px;
+}
+
+.container .profile img{
+   height: 150px;
+   width: 150px;
+   border-radius: 50%;
+   object-fit: cover;
+   margin-bottom: 5px;
+}
+
+.container .profile h3{
+   margin:5px 0;
+   font-size: 20px;
+   color:var(--black);
+}
+
+.container .profile p{
+   margin-top: 20px;
+   color:var(--black);
+   font-size: 20px;
+}
+
+.container .profile p a{
+   color:var(--red);
+}
+
+.container .profile p a:hover{
+   text-decoration: underline;
+}
+
+.update-profile{
+   min-height: 100vh;
+   background-color: var(--light-bf);
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding:20px;
+   margin-top: 90px;
+   /* min-height: 100vh;
+   width: 100%;
+   overflow: hidden; */
+}
+
+.update-profile form{
+   padding:20px;
+   background-color: var(--white);
+   box-shadow: var(--box-shadow);
+   text-align: center;
+   width: 700px;
+   text-align: center;
+   border-radius: 5px;
+}
+
+.update-profile form img{
+   height: 200px;
+   width: 200px;
+   border-radius: 50%;
+   object-fit: cover;
+   margin-bottom: 5px;
+}
+
+.update-profile form .flex{
+   display: flex;
+   justify-content: space-between;
+   margin-bottom: 20px;
+   gap:15px;
+}
+
+.update-profile form .flex .inputBox{
+   width: 49%;
+}
+
+.update-profile form .flex .inputBox span{
+   text-align: left;
+   display: block;
+   margin-top: 15px;
+   font-size: 17px;
+   color:var(--black);
+}
+
+.update-profile form .flex .inputBox .box{
+   width: 100%;
+   border-radius: 5px;
+   background-color: var(--light-bg);
+   padding:12px 14px;
+   font-size: 17px;
+   color:var(--black);
+   margin-top: 10px;
+}
+
+@media (max-width:550px){
+   .update-profile form .flex{
+      flex-wrap: wrap;
+      gap:0;
+   }
+   .update-profile form .flex .inputBox{
+      width: 100%;
+   }
+
+   /* h1 {
+      text-align: center;
+      margin: 35px 0 20px 0 !important;
+    } */
+
+    
+}
+
+.brand_logo_container {
+   position: absolute;
+   height: 130px;
+   width: 150px;
+   top: 50px;
+   margin-left: 145px;
+   /* left: 100px; */
+   border-radius: 50%;
+   padding: 10px;
+   text-align: center;
+}
+
+.brand_logo {
+   height: 130px;
+   width: 150px;
+   border-radius: 25%;
+   margin-top: 40px;
+   border: 2px solid white;
+}
+
+.brand_logo_container1 {
+   position: absolute;
+   height: 130px;
+   width: 150px;
+   top: 50px;
+   margin-left: 145px;
+   /* left: 100px; */
+   border-radius: 50%;
+   padding: 10px;
+   text-align: center;
+}
+
+.brand_logo1 {
+   height: 130px;
+   width: 150px;
+   border-radius: 25%;
+   margin-top: 230px;
+   border: 2px solid white;
+}
+
+.brand_logo_container2 {
+   position: absolute;
+   height: 130px;
+   width: 150px;
+   top: 50px;
+   margin-left: 145px;
+   /* left: 100px; */
+   border-radius: 50%;
+   padding: 10px;
+   text-align: center;
+}
+
+.brand_logo2 {
+   height: 130px;
+   width: 150px;
+   border-radius: 25%;
+   margin-top: 420px;
+   border: 2px solid white;
+}
+
+.shadow img {
+   transition: .5s ease;
+   }
+   
+   .shadow img:hover{
+   box-shadow:
+   1px 1px #373737,
+   2px 2px #373737,
+   3px 3px #373737,
+   4px 4px #373737,
+   5px 5px #373737,
+   6px 6px #373737;
+   -webkit-transform: translateX(-3px);
+   transform: translateX(-3px);
+   transition: .5s ease;
+   }
+
+
+.body-container {
+   /* margin-top: 20px; */
+   /* margin-bottom: 20px; */
+   display: absolute;
+   flex-flow: column nowrap;
+   justify-content: center;
+   align-items: center;
+   width: 900px;
+ }
+
+ body {background:#f3efe8;}
+ .loading {
+   font-family: "Poppins", "Poppins Bold", Gadget, sans-serif;
+   text-transform:uppercase;
+   
+   width:550px;
+   text-align:center;
+   line-height:50px;
+
+   /* position:absolute; */
+   left:0;right:0;top:50%;
+   margin:auto;
+   transform:translateY(-50%);
+ }
+ 
+ .loading span {
+   position:relative;
+   z-index:999;
+   font-size: 25px;
+   /* color:#fff; */
+ }
+ .loading:before {
+   content:'';
+   background: #1a8cff;
+   width:550px;
+   height:36px;
+   display:block;
+   position:absolute;
+   top:0;left:0;right:0;bottom:0;
+   margin:auto;
+   
+   animation:2s loadingBefore infinite ease-in-out;
+ }
+ 
+ @keyframes loadingBefore {
+   0%   {transform:translateX(-20px);}
+   50%  {transform:translateX(20px);}
+   100% {transform:translateX(-20px);}
+ }
+ 
+ 
+ .loading:after {
+   content:'';
+   background:#ff6666;
+   width:14px;
+   height:60px;
+   display:block;
+   position:absolute;
+   top:0;left:0;right:0;bottom:0;
+   margin:auto;
+   opacity:.5;
+   
+   animation:2s loadingAfter infinite ease-in-out;
+ }
+ 
+ @keyframes loadingAfter {
+   0%   {transform:translateX(-50px);}
+   50%  {transform:translateX(50px);}
+   100% {transform:translateX(-50px);}
+ }
+
+ .contact .box-container{
+   margin-top: 3rem;
+   display: flex;
+   align-items: flex-start;
+   gap: 1.5rem;
+   flex-wrap: wrap;
+}
+
+.contact .box-container .box{
+   flex: 1 1 30rem;
+   border-radius: .5rem;
+   background-color: var(--white);
+   padding: 2rem;
+   text-align: center;
+}
+
+.contact .box-container .box i{
+   font-size: 3rem;
+   color: var(--main-color);
+   margin-bottom: 1rem;
+}
+
+.contact .box-container .box h3{
+   margin: 1.5rem 0;
+   font-size: 2rem;
+   color: var(--black);
+}
+
+.contact .box-container .box a{
+   display: block;
+   font-size: 1.7rem;
+   color: var(--light-color);
+   line-height: 1.5;
+   margin-top: .5rem;
+}
+
+.contact .box-container .box a:hover{
+   text-decoration: underline;
+   color: var(--main-color);
+}
